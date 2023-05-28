@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website_Ilagan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+/* Navigation Style */
+  nav {
+      background-color: white;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+    }
+
+    nav a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: gray;
+    }
+	.column1 {
+  float: left;
+  width: 32%;
+  padding: 5px;
+  height: 33%;
+  color: black;
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: bold;
+}
+.navbar {
+  width: 100%;
+  background-color:#6564DB;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #6E80DC;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.Info{
+text-align:right;
+font-family: 'Ysabeau', sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+#myH6{
+color: black;
+}
+.column1 {
+  float: left;
+  width: 32%;
+  padding: 5px;
+  height: 33%;
+  color: black;
+  font-family: 'Ysabeau', sans-serif;
+ font-weight: bold;
+}
+
+p{
+text-align:center;
+font-family: 'Ysabeau', sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+
+      table thead {
+        display: none;
+      }
+
+      table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+      }
+
+      table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ddd;
+      }
+
+      table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+	
+#foot{
+background-color:#6564DB;
+color: white;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+
+ </style>
+ 
+ <!--Navigation Section -->
+ <nav>
+<div class="navbar">
+  <a href="New.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="Shop.html"><i class="fa fa-fw fas fa-cart-plus"></i> Shop</a>
+  <a href="Signinform.html"><i class="fa fa-fw fa-user"></i>Sign-in</a>
+  <h6 class="Info">Nissan Skyline Gallery</h6>
+</div>
+  </nav>
+  
+  
+<!--H6 Section -->
+<h6 class="w3-container w3-padding" id="myH6">
+  <div class="w3-left">
+  <h1 class="w3-xlarge w3-animate-bottom"></h1>
+    <div class="w3-padding-20">
+      <button class="w3-btn w3-hover-white w3-animate-bottom" onclick="document.getElementById('id01').style.display='block'" style="text-align:left;font-family: Lato;font-family: 'Ysabeau', sans-serif;font-size: 20px; font-weight: bold; color: black;">See Full Description:<i class="fa fa-fw fas fa-arrow-circle-right"></i></button>
+    </div>
+  </div>
+</h6>
+
+
+<!-- Modal Section -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+ <span onclick="document.getElementById('id01').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+        <h4 style="font-weight: bold;">Nissan introduced another facelift for its supercar-killer GT-R in early 2023 at the Tokyo Auto Show, improving the vehicle's look and refining its ride qualities.</h4>
+      </header>
+	  <p><br>The legendary Skyline, first introduced in 1957, was originally built by Japan’s Prince Motor Company. Production of the Prince Skyline lasted from 1957 until 1966, when Prince and Nissan merged. With humble origins as a rather modest 4-door luxury car, the Skyline began to evolve into a performance-bred sportscar following the merger. 
+	  Today the Skyline is most recognized as the influential predecessor to the modern GT-RBy the time the Skyline H/T 2000GT-R was produced, 
+	  now in a coupe body style, the GT-R racked up its 50th overall racing victory. The following year, the KPGC110 hit the market, 
+	  but after a production run of a mere 197 units, Nissan pulled the plug on the GT-R, citing stricter emissions standards and 
+	  the international oil crisis as the main reasons. The GT-R would not be seen for another 16 years.</p>
+</div>
+</div>
+
+
+<!-- Gallery Section -->
+<div class="w3-card w3-container" style="min-height:460px" id="text">
+<div class="w3-content" style="max-width:800px;position:relative">
+<img class="mySlides w3-animate-opacity" src="1.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="2.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="3.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="4.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="5.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="6.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="7.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="8.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="9.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="10.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="11.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="12.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="13.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="14.jpg" style="width:100%">
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">&#10095;</a>
+</div>
+
+
+<h2 style="font-weight: bold; text-align:center;font-family: 'Ysabeau', sans-serif; font-size:40px;">2024 Nissan G-TR</h2>
+<p style="text-align:center;font-family: 'Ysabeau', sans-serif;font-size: 20px;font-weight: bold; font-size: 25px;">Introduced in 2007 as a 2008 model year, the fifth generation of this Japanese sports car lost the Skyline nameplate and kept only the GT-R. At the time of its launch, it was a huge surprise and proved that Nissan could beat Porsche and Lamborghini at their own games. But, unfortunately, Nissan didn't come up with a new generation for the vehicle in more than 15 years. Instead, it chose to update it and upgrade it little by little.
+For the 2024 model year, the GT-R received a new aerodynamic upgrade that improved the car's downforce despite keeping the same drag coefficient of 0.26. That was possible by narrowing the front grille between the bumper and the hood and installing a thinner mesh. Nissan offered the supercar in three trim levels: GT-R Premium, T-Spec, and the GT-R NISMO, which was also the most powerful of them.
+At first sight, the vehicle's interior design didn't go through an essential upgrade. Still, the Nappa-wrapped dashboard and the new seats offered a glimpse of the car's new features. Atop the center stack, Nissan installed an 8" infotainment unit that featured Apple CarPlay. In addition, for specific markets, it also featured satellite radio. To further enhance the sound, Nissan worked together with Bose for the 11-speaker system.
+Under the hood, the 3.8-liter twin-turbocharged V6 produced 565 hp (573 PS), which it sent in all corners via the acclaimed ATTESA ET-S all-wheel-drive system.</p>
+<center>
+<table>
+    <thead>
+      <tr>
+        <th>ENGINE SPECS - 3.8L V6 6AT 4WD (570 HP)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Product">Cylinder:</td>
+        <td data-label="Price">V6</td>
+      </tr>
+
+      <tr>
+		<td data-label="Product">Displacement:</td>
+        <td data-label="Price">	3799 cm3</td>
+      </tr>
+      <tr>
+		<td data-label="Product">Fuel System:</td>
+        <td data-label="Price">Sequential multi-point electronic fuel injection</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Fuel:</td>
+        <td data-label="Price">Gasoline</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Fuel Capacity:</td>
+        <td data-label="Price">19.5 gallons (73.8 L)</td>
+      </tr> 
+	  <tr>
+	  <th>BRAKES SPECS</th>
+	  </tr>
+	  	  <tr>
+		<td data-label="Product">Front:</td>
+        <td data-label="Price">Ventilated Discs</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Rear:</td>
+        <td data-label="Price">Ventilated Discs</td>
+      </tr> 
+	   <th>TRANSMISSION SPECS</th>
+	  </tr>
+	  	  <tr>
+		<td data-label="Product">Drive Type:</td>
+        <td data-label="Price">All Wheel Drive</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Gearbox:</td>
+        <td data-label="Price">6-automatic speed GR6 dual clutch</td>
+      </tr> 
+	  	   <th>TIRES SPECS</th>
+	  </tr>
+	  	  <tr>
+		<td data-label="Product">Tire Size:</td>
+        <td data-label="Price">	255/40 R20 // 285/35 R20</td>
+      </tr>
+      </tr> 
+	  	   <th>DIMENSION</th>
+	  </tr>
+      <tr>
+		<td data-label="Product">Fuel System:</td>
+        <td data-label="Price">Sequential multi-point electronic fuel injection</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Fuel:</td>
+        <td data-label="Price">Gasoline</td>
+      </tr>
+	  <tr>
+		<td data-label="Product">Fuel Capacity:</td>
+        <td data-label="Price">19.5 gallons (73.8 L)</td>
+      </tr> 
+	  
+	  
+	  
+	  
+	  
+    </tbody>
+  </table>
+<img class="img" src="n1.jpg">
+<img class="img" src="n2.jpg">
+<img class="img" src="n3.jpg">
+<img class="img" src="n4.jpg">
+<img class="img" src="n5.jpg">
+
+</center><br>
+<!--Article Section -->
+<div>
+<button onclick="myAccFunc('Demo1')" style="text-align:right;font-family: Lato;font-family: 'Ysabeau', sans-serif; font-weight: bold;color: black; class=" w3-padding-16 w3-button w3-block w3-left-align">Show related articles</button>
+<div id="Demo1" class="w3-hide">
+  <div class="w3-container">
+   <div class="row">
+  <div class="column1">
+    <img src="nissan.jpg" style="width:100%">
+	<a href="https://www.91wheels.com/faqs/what-are-the-top-competitors-of-nissan-gtr/7727">What are the top competitors of Nissan GTR?</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://carfromjapan.com/article/car-review/interesting-nissan-skyline-facts/">Interesting Nissan Skyline Facts You Didn’t Know</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://carfromjapan.com/article/car-comparison/nissan-gtr-vs-skyline/">Nissan GTR vs Skyline: What Are the Basic Differences?</a>
+  </div>
+   <div class="column1">
+    <img src="nissan.jpg" style="width:100%">
+	<a href="https://www.motortrend.com/features/the-history-of-japans-first-supercar/">The History of japan first supercar</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://es.motor1.com/news/184988/nissan-skyline-evolucion-video/">Nissan Skyline Evolution</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://www.caranddriver.com/#">Car and Driver</a>
+  </div>
+   <div class="column1">
+    <img src="nissan.jpg" style="width:100%">
+	<a href="https://www.motortrend.com/features/1512-history-and-facts-about-the-nissan-skyline-gt-r/">History and Facts</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://www.autoevolution.com/nissan/gt-r/">Nissan GT-R</a>
+  </div>
+  <div class="column1">
+    <img src="nissan.jpg"  style="width:100%">
+	<a href="https://carfromjapan.com/article/car-comparison/nissan-gtr-vs-skyline/">Nissan GTR vs Skyline: What Are the Basic Differences?</a>
+  </div>
+</div>
+  </div>
+</div>
+
+<!--Footer Section -->
+  <footer id="foot">
+   <hr style="background-color: black; height=7">
+    <center>
+            <h6 style="color: white; font-weight: bold;">About Us</h6>
+            <p class="text-justify">By inspiring the car lover and empowering the car buyer, The world’s most influential automotive media brand and the definitive automotive resource; informing, advocating and influencing what we drive and why. We translate the technical into the relatable and bring a clear, 
+			consumer-focused understanding to the increasingly complex automotive landscape.</p>
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+</center>
+</footer>
+
+
+<script>
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+</body>
+</html>

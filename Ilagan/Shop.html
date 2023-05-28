@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Shop Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+background-color:#6564DB;
+color: #fff;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align:left;
+font-family: 'Ysabeau', sans-serif;
+font-size: 10px;
+font-weight: bold;
+}
+
+#cart {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.add-to-cart {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+//////
+
+.category-type{
+	margin-left: 55px;
+	font-size: 23px;
+	font-family: Audiowide, sans-serif;
+}
+
+.item{
+    Height: 120px;
+	Width: 180px;
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 200px;
+	height: 253.4px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background: linear-gradient(to bottom, #023020 4%, #28282B 100%);
+	border-radius: 15px;
+	transition: transform .2s;
+	border-style: groove;
+	border-color: #fff;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.card:hover {
+  	transform: scale(1.1); 
+}
+
+.name {
+	color: #86C232;
+	font-size: 15px;
+	font-family: Audiowide, sans-serif
+}
+
+
+.right .top_link a {
+    color: white;
+    font-weight: bold;
+}
+.right .top_link{
+  height: 30px
+}
+
+</style>
+<body>
+  <header>
+    <h1>For Sale Nissan AutoMobile <i class="fa fa-fw fas fa-tags"></i></h1>
+	<div class="right">
+    <div class="top_link"><a href="New.html">Return Home</a></div>
+    <div id="cart">
+      <span id="cart-count">0</span>
+    </div>
+  </header>
+  <div id="product-list">
+    <div class="product">
+      <img src="nissan.jpg" alt="Product 1">
+      <h3>Nismo GTR</h3>
+      <p>$5,000,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+	  <button onclick="showAlert()">Buy Now</button>
+    </div>
+	
+	 <div id="product-list">
+    <div class="product">
+      <img src="nissan.jpg" alt="Product 1">
+      <h3>Nismo GTR</h3>
+      <p>$5,000,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+	  <button onclick="showAlert()">Buy Now</button>
+    </div>
+	
+	 <div id="product-list">
+    <div class="product">
+      <img src="nissan.jpg" alt="Product 1">
+      <h3>Nismo GTR</h3>
+      <p>$5,000,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+	  <button onclick="showAlert()">Buy Now</button>
+    </div>
+
+	 <div id="product-list">
+    <div class="product">
+      <img src="nissan.jpg" alt="Product 1">
+      <h3>Nismo GTR</h3>
+      <p>$5,000,000</p>
+      <button class="add-to-cart">Add to Cart</button>
+	  <button onclick="showAlert()">Buy Now</button>
+    </div>
+
+
+
+
+  <script> 
+ // Get the cart count element
+const cartCountElement = document.getElementById('cart-count');
+
+// Initialize cart count
+let cartCount = 0;
+
+// Get all the add-to-cart buttons
+const addToCartButtons = document.getElementsByClassName('add-to-cart');
+
+// Add click event listeners to the add-to-cart buttons
+for (let i = 0; i < addToCartButtons.length; i++) {
+  addToCartButtons[i].addEventListener('click', function() {
+    cartCount++;
+    cartCountElement.innerText = cartCount;
+  });
+}
+function showAlert() {
+      // Display the alert message
+      alert("Orders ready to shipped!");
+
+      // Reset the cart count
+      cartCount = 0;
+      cartCountElement.innerText = cartCount;
+    }
+
+ </script>
+</body>
+</html>
+
